@@ -1,0 +1,37 @@
+{
+    "name": "silicates/silex-symfony-bridge",
+    "description": "Bridges Symfony bundles and Silex applications",
+    "keywords": ["silex", "symfony", "bundle"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pascal Luna",
+            "email": "skalpa@zetareticuli.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "pimple/pimple": "^3.0",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.2",
+        "symfony/dependency-injection": "^3.3@dev"
+    },
+    "replace": {
+        "symfony/dependency-injection": "^2.8,^3.0"
+    },
+    "autoload": {
+        "psr-4": { "Silicates\\Bridge\\Symfony\\": "src" }
+    },
+    "autoload-dev" : {
+        "psr-4": { "Silicates\\Bridge\\Symfony\\Tests\\" : "tests" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
